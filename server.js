@@ -1,21 +1,29 @@
 const express = require('express');
 const {MongoClient} = require('mongodb');
 
+
 const app = express();
 const port = 3000;
 
-const connectionString = 'mongodb://localhost:27017';
+const connectionStringURI = 'mongodb://localhost:27017';
 const client = new MongoClient(connectionStringURI);
 
 let db;
 
-const dbName = 'hubDB';
+const dbName = 'userDB';
 
 client.connect()
     .then(() => {
-        console.log('Finally Connected successfully to server');
+        console.log('Finally Connected successfully to MongoDb server');
 
         db = client.db(dbName);
+        db.collection('userDB').deleteMany({});
+
+        db.collection('userDB').insertMany(data)
+        .then(res => console.log(res))
+        .catch(err => {
+            if(err) return console.log(err);
+        }); 
 
         app.listen(port, () => {
             console.log(`Server is listening on port http://localhost:${port}`);
