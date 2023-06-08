@@ -1,61 +1,19 @@
 const express = require('express');
-const {MongoClient} = require('mongodb');
+const db = require('./config/connections');
+const routes = require('./routes');
 
-
+const PORT = process.env.PORT || 3001;
 const app = express();
-const port = 3000;
 
-const connectionStringURI = 'mongodb://localhost:27017';
-const client = new MongoClient(connectionStringURI);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(routes);
 
-let db;
-
-const dbName = 'userDB';
-
-client.connect()
-    .then(() => {
-        console.log('Finally Connected successfully to MongoDb server');
-
-        db = client.db(dbName);
-        db.collection('userDB').deleteMany({});
-
-        db.collection('userDB').insertMany(data)
-        .then(res => console.log(res))
-        .catch(err => {
-            if(err) return console.log(err);
-        }); 
-
-        app.listen(port, () => {
-            console.log(`Server is listening on port http://localhost:${port}`);
-        });
-    })
-    .catch(err => {
-        console.log('Error connecting to server', err);
-    });   
-
-    app.use(express.json());
-
-    app.post('/create', (req, res) => {
-
-        db.collection('userCollections').insertOne(
-            {name: req.body.name, email: req.body.email, password: req.body.password}
-        )
-        .then(result => res.json(result))
-        .catch(err => {
-            if(err) throw err;
-        });
-    });
-    
-    app.get('/read', (req, res) => {
-        db.collection('userCollections')
-        .find()
-        .toArray()
-        .then(result => res.json(result))
-        .catch(err => {
-            if(err) throw err;
-        });
-    });
-
+db.once('open', () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
+});
 
 
     
