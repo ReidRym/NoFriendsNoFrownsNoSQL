@@ -34,7 +34,7 @@ The API is built using a NoSQL database and provides routes for users and though
 
 2. To start the server, type ``node server.js``
 
-3. To test the API, open Insomnia and enter the GET routes for users and thoughts (e.g. http://localhost:3000/api/users). Note that data from the database should appear as a formated JSON.
+3. To test the API, open Insomnia and enter the GET routes for users and thoughts (e.g. http://localhost:3001/api/users). Note that data from the database should appear as a formated JSON.
 
 4. Test the API POST, PUT and DELETE routes in Insomnia to create, update, and delete users and thoughts in the database. 
 

@@ -18,7 +18,7 @@ const thoughtController = {
     getThoughtById(req, res) {
         Thought.findOne({ _id: req.params.thoughtId })
         .populate('reactions')
-        populate('thoughts')
+        // populate('thoughts')
         .then((dbThoughtData) => {
             if (!dbThoughtData) {
                 return res.status(404).json({ message: 'No thought has that id' });
@@ -49,7 +49,7 @@ const thoughtController = {
     updateThought(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
-            body,
+            
             {
                 $set: req.body,
             },
