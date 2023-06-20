@@ -57,7 +57,21 @@ MIT
 
 ## Features  
 
-Place video here.
+USERS:
+
+https://drive.google.com/file/d/1_1-QIdRERIbQBj970CPE6AxcVmtzPrgp/view
+
+FRIENDS:
+
+https://drive.google.com/file/d/14gyY0uUGgSa6zcK6wUYnDO8qZo_c7PRS/view
+
+THOUGHTS:
+
+https://drive.google.com/file/d/1bhy9yPxzQABrbFYFHszNG8SjJecgki3O/view
+
+REACTIONS:
+
+https://drive.google.com/file/d/1bGbmWMCduxHg3zsZOnGkS9yw6nF57Ce_/view
 
 Place Images here.
 
