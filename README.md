@@ -75,7 +75,10 @@ REACTIONS:
 
 https://drive.google.com/file/d/1bGbmWMCduxHg3zsZOnGkS9yw6nF57Ce_/view
 
-Place Images here.
+STILL IMAGE BELOW:
+
+![MODULE 18 NOSQL](https://github.com/ReidRym/NoFriendsNoFrownsNoSQL/assets/123789106/7cb508b1-cd8b-4975-a07e-b5fb4715ff96)
+
 
 - An API for a social network that uses a NoSQL database to handle large amounts of unstructured data
 - Ability to launch a server and sync Mongoose models to a MongoDB database
