@@ -57,6 +57,8 @@ MIT
 
 ## Features  
 
+VIEW VIDEOS BY CATEGORIE BELOW!
+
 USERS:
 
 https://drive.google.com/file/d/1_1-QIdRERIbQBj970CPE6AxcVmtzPrgp/view
