@@ -59,6 +59,10 @@ MIT
 
 VIEW VIDEOS BY CATEGORIE BELOW!
 
+STARTING SERVER:
+
+https://drive.google.com/file/d/1m4oMmwd5iluPSvtwq4WFBBSC4ojfzQef/view
+
 USERS:
 
 https://drive.google.com/file/d/1_1-QIdRERIbQBj970CPE6AxcVmtzPrgp/view
